@@ -7,6 +7,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
+        gap: 16.4rem;
         .left-content{
             width: 100%;
             max-width: 59.3rem;
@@ -48,11 +49,79 @@
                     line-height: 120%;
                     text-decoration-line: underline;
                     color: var(--gray-100);
+                    transition: all 0.3s;
+                    &:hover{
+                        color: var(--gray-200);
+                    }
                 }
             }
         }
         .right-content{
             padding-top: 6.9rem;
+            width: 100%;
+            .slide-principal{
+                position: relative;
+                .circle-rotate{
+                    position: absolute;
+                    top: 35px;
+                    left: -44px;
+                    z-index: 2000;
+                    width: 9rem;
+                    height: 9rem;
+                    .rotate{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        margin: auto;
+                    }
+                    .arrow{
+                        z-index: 1999;
+                        position: absolute;
+                        top: 27px;
+                        right: 0;
+                        left: 28px;
+                        bottom: 0;
+                        margin: 0 auto;
+                    }
+                }
+                .swiper-wrapper{
+                    max-width: 49rem;
+                    .swiper-slide{
+                        position: relative;
+                        .bg-image{
+                            max-width: 49rem;
+                        }
+                        .logo-slide{
+                            position: absolute;
+                            right: -34px;
+                            z-index: 1999;
+                            bottom: 213px;
+                        }
+                    }
+                }
+                .swiper-pagination-fraction{
+                    margin-left: 24px;
+                    margin-bottom: 7px;
+                    max-width: 37px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    line-height: 150%;
+                    letter-spacing: 0.03em;
+                    color: var(--gray-100);
+                    .swiper-pagination-current, .swiper-pagination-total{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        line-height: 150%;
+                        letter-spacing: 0.03em;
+                        color: var(--gray-100);
+                    }
+                    .swiper-pagination-total{
+                        color: var(--gray-300);
+                    }
+                }
+            }
         }
     }
 }

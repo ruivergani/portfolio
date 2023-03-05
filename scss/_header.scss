@@ -10,6 +10,12 @@ header{
     transition: all .4s ease-in-out;
     display: flex;
     border-bottom: 0.5px solid var(--gray-800);
+    &.changeHeight{
+        height: 7.5rem;
+        .menu-mobile{
+            top: 7.5rem;
+        }
+    }
     .container{
         display: flex;
         align-items: center;
@@ -100,7 +106,7 @@ header{
     }
     .menu-mobile{
         position: absolute; // acompanha mesmo com rolagem
-        top: 88px; // size of header nav
+        top: 8.8rem; // size of header nav
         height: calc(100vh - 88px); // viewport height
         width: 100%;
         background: var(--brand-gradient);
