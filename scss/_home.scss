@@ -100,8 +100,8 @@
                     }
                 }
                 .swiper-pagination-fraction{
-                    margin-left: 24px;
-                    margin-bottom: 7px;
+                    margin-left: 2.4rem;
+                    margin-bottom: 42px;
                     max-width: 37px;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 600;
@@ -119,6 +119,56 @@
                     }
                     .swiper-pagination-total{
                         color: var(--gray-300);
+                    }
+                }
+                .swiper-progress-bar{
+                    position: absolute;
+                    left: 0;
+                    bottom: 33px;
+                    height: 2px;
+                    margin-left: 28px;
+                    margin-right: 2.4rem;
+                    width: 100%;
+                    display: block;
+                    max-width: 43.7rem;
+                    z-index: 2024;
+                    display: flex;
+                    align-items: center;
+                    background: #9A9D9E;
+                    gap: 2.3rem;
+                    .slide-progress-bar{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 2px;
+                        width: 100%;
+                        opacity: 1;
+                        z-index: 2024;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: block;
+                            background: white;
+                            height: 100%;
+                            width: 0; 
+                            transition: width 0.1s linear;
+                        }
+                    }
+                    &.active{ // modify the pattern state
+                        .slide-progress-bar{
+                            opacity: 1;
+                        }
+                    }
+                    &.animate{ // animate the progress bar
+                        .slide-progress-bar{
+                            &:after{
+                                width: 100%;
+                                transition: width 5s linear; // tempo do slide passar (5000ms) 
+                            }
+                        }
                     }
                 }
             }

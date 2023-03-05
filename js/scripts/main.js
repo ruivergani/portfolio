@@ -29,6 +29,8 @@ function fixedMenu() {
 document.addEventListener("scroll", fixedMenu);
 
 
+const progressSlide = document.querySelector('.js-progress'); // get progress bar
+
 // Script for Swipper Slide
 var swiper = new Swiper(".slide-principal", {
     autoplay: {
@@ -41,7 +43,20 @@ var swiper = new Swiper(".slide-principal", {
       clickable: true,
       type: "fraction",
     },
-    breakpoints:{
-
-    }
+    on: { // get some elements from swiper slide
+        init : function () { // when slide starts
+          progressSlide.classList.remove('animate');
+          progressSlide.classList.remove('active');
+          progressSlide.classList.add('animate'); // faz a barra crescer
+          progressSlide.classList.add('active'); // da opacidade
+        }, 
+        slideChangeTransitionStart : function (){ // when the transition start
+          progressSlide.classList.remove('animate');
+          progressSlide.classList.remove('active');
+          progressSlide.classList.add('active');
+        }, 
+        slideChangeTransitionEnd : function (){ // when the transiction finish
+          progressSlide.classList.add('animate'); // um apos o outro - nao pode adicionar junto
+        }
+      }
 });
