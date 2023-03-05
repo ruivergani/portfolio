@@ -96,6 +96,13 @@
                             right: -34px;
                             z-index: 1999;
                             bottom: 213px;
+                            opacity: 0;
+                            
+                        }
+                        &-active{
+                            .logo-slide{
+                                opacity: 1;
+                            }
                         }
                     }
                 }
@@ -131,7 +138,7 @@
                     width: 100%;
                     display: block;
                     max-width: 43.7rem;
-                    z-index: 2024;
+                    z-index: 2022;
                     display: flex;
                     align-items: center;
                     background: #9A9D9E;
@@ -144,7 +151,7 @@
                         height: 2px;
                         width: 100%;
                         opacity: 1;
-                        z-index: 2024;
+                        z-index: 2022;
                         &:after{
                             content: "";
                             position: absolute;
