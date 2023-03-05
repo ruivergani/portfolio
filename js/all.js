@@ -1,1 +1,1 @@
-"use strict";
+"use strict";var btnScrollTop=document.getElementById("js-btn-scroll-top"),menuButton=(btnScrollTop&&btnScrollTop.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),document.getElementById("js-menu-button"));menuButton&&menuButton.addEventListener("click",function(){menuButton.classList.toggle("is-active"),document.documentElement.classList.toggle("menu-opened")});
