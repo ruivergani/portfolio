@@ -13,8 +13,9 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    cursor: url(../assets/icons/cursor-black.svg),auto;
 }
-img{
+svg, img{ 
     max-width: 100%;
 }
 button{
