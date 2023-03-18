@@ -26,6 +26,9 @@ header{
                 width: 100%;
                 max-width: 16rem;
             }
+            &:hover{
+                cursor: url(../assets/icons/cursor-link-white.svg),auto;
+            }
         }
         nav{
             display: flex;
@@ -48,6 +51,7 @@ header{
                         transition: all 0.3s;
                         &:hover{
                             color:var(--gray-200);
+                            cursor: url(../assets/icons/cursor-link-white.svg),auto;
                         }
                     }
                 }

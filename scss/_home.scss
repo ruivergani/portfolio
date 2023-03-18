@@ -63,6 +63,7 @@
                     transition: all 0.3s;
                     &:hover{
                         color: var(--gray-200);
+                        cursor: url(../assets/icons/cursor-link-white.svg),auto;
                     }
                 }
             }
