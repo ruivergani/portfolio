@@ -84,6 +84,9 @@
                         top: 0;
                         left: 0;
                         margin: auto;
+                        transition: all 0.1s linear;
+                        width: fit-content;
+                        height: fit-content;
                     }
                     .arrow{
                         z-index: 1999;
@@ -192,4 +195,6 @@
             }
         }
     }
+    // Responsive
+    
 }
