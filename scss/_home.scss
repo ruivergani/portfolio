@@ -5,10 +5,10 @@
     position: relative;
     height: 74.7rem;
     .container{
+        width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        gap: 16.4rem;
         .left-content{
             width: 100%;
             max-width: 59.3rem;
@@ -71,6 +71,7 @@
         .right-content{
             padding-top: 6.9rem;
             width: 100%;
+            max-width: 49rem;
             .slide-principal{
                 position: relative;
                 .circle-rotate{
@@ -108,11 +109,10 @@
                         }
                         .logo-slide{
                             position: absolute;
-                            right: -34px;
+                            right: -35px;
                             z-index: 1999;
                             bottom: 213px;
                             opacity: 0;
-                            
                         }
                         &-active{
                             .logo-slide{
@@ -197,5 +197,72 @@
         }
     }
     // Responsive
-    
+    @media (max-width: 1330px){
+        .container{
+            .right-content{
+                max-width: 55rem;
+                .slide-principal{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .logo-slide{
+                                right: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1165px){
+        .container{
+            .right-content{
+                max-width: 55rem;
+                .slide-principal{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .logo-slide{
+                                right: -9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1120px){
+        .container{
+            .right-content{
+                max-width: 45rem;
+                .slide-principal{
+                    .swiper-wrapper{
+                        max-width: 40rem;
+                        .swiper-slide{
+                            .bg-image{
+                                max-width: 43rem;
+                            }
+                            .logo-slide{
+                                bottom: 130px;
+                                right: -18px;
+                            }
+                        }
+                    }
+                    .swiper-progress-bar{
+                        max-width: 36.7rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 1005px){
+        height: 90rem;
+        .container{
+            flex-direction: column;
+            .left-content{
+                max-width: 100%;
+            }
+            .right-content{
+                
+            }
+        }
+    }
 }
