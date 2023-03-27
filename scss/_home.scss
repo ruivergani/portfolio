@@ -38,7 +38,6 @@
                     margin-top: 1.6rem;
                     margin-bottom: 2.4rem;
                 }
-                
                 p{
                     width: 100%;
                     max-width: 45.1rem;
@@ -55,7 +54,6 @@
                     gap: 1.6rem;
                     font-family: 'Poppins', sans-serif;;
                     font-weight: 600;
-                    font-style: normal;
                     font-size: 1.8rem;
                     line-height: 120%;
                     text-decoration-line: underline;
@@ -254,14 +252,214 @@
         }
     }
     @media (max-width: 1005px){
-        height: 90rem;
+        height: 107rem;
         .container{
             flex-direction: column;
             .left-content{
                 max-width: 100%;
+                padding-top: 8rem;
+                .content-text{
+                    h1{
+                        font-size: 50px;
+                    }
+                    p{
+                        margin-bottom: 4rem;
+                    }
+                }
             }
             .right-content{
-                
+                align-self: center;
+            }
+        }
+    }
+    @media (max-width: 600px){
+        height: 90rem;
+        .container{
+            .left-content{
+                padding-top: 6rem;
+                .content-text{
+                    h1{
+                        font-size: 40px;
+                    }
+                    span{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 16px;
+                        max-width: 100%;
+                    }
+                    .project-link{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+            .right-content{
+                max-width: 36rem;
+                padding-top: 5rem;
+                .slide-principal{
+                    .swiper-wrapper{
+                        max-width: 36rem;
+                        .swiper-slide{
+                            .bg-image{
+                                max-width: 36rem;
+                            }
+                            .logo-slide{
+                               right: -38px;
+                               bottom: 90px;
+                            }
+                        }
+                    }
+                    .swiper-progress-bar{
+                        max-width: 30.7rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 475px){
+        height: 80rem;
+        .container{
+            .left-content{
+                padding-top: 4rem;
+                .content-text{
+                    h1{
+                        margin-top: 1.5rem;
+                        margin-bottom: 2rem;
+                    }
+                    p{
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+            .right-content{
+                max-width: 31rem;
+                padding-top: 3rem;
+                .slide-principal{
+                    .swiper-wrapper{
+                        max-width: 31rem;
+                        .swiper-slide{
+                            .bg-image{
+                                max-width: 31rem;
+                            }
+                            .logo-slide{
+                                width: 100%;
+                                max-width: 6rem;
+                                right: -28px;
+                            }
+                        }
+                    }
+                    .swiper-progress-bar{
+                        max-width: 25.7rem;
+                    }
+                    .circle-rotate{
+                        width: 8rem;
+                        height: 8rem;
+                        .arrow{
+                            max-width: 25px;
+                            right: 26px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 430px){
+        .container{
+            .left-content{
+                padding-top: 4rem;
+                .content-text{
+                    text-align: center;
+                    h1{
+                        margin-top: 1.5rem;
+                        margin-bottom: 2rem;
+                        font-size: 36px;
+                    }
+                    p{
+                        margin-bottom: 3rem;
+                    }
+                    .project-link{
+                        justify-content: center;
+                    }
+                }
+            }
+            .right-content{
+                max-width: 28rem;
+                padding-top: 3rem;
+                .slide-principal{
+                    .swiper-wrapper{
+                        max-width: 28rem;
+                        .swiper-slide{
+                            .bg-image{
+                                max-width: 28rem;
+                            }
+                            .logo-slide{
+                                width: 100%;
+                                max-width: 6rem;
+                                right: -28px;
+                            }
+                        }
+                    }
+                    .swiper-progress-bar{
+                        max-width: 22.7rem;
+                    }
+                    .circle-rotate{
+                        width: 7.4rem;
+                        height: 7.4rem;
+                        left: -35px;
+                        .arrow{
+                            max-width: 26px;
+                            right: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 370px){
+        height: 70rem;
+        .container{
+            .left-content{
+                padding-top: 3rem;
+                .content-text{
+                    h1{
+                        font-size: 30px;
+                    }
+                    p{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .right-content{
+                max-width: 25rem;
+                padding-top: 3rem;
+                .slide-principal{
+                    .swiper-wrapper{
+                        max-width: 25rem;
+                        .swiper-slide{
+                            .bg-image{
+                                max-width: 25rem;
+                            }
+                            .logo-slide{
+                                width: 100%;
+                                max-width: 5rem;
+                                right: -22px;
+                            }
+                        }
+                    }
+                    .swiper-progress-bar{
+                        max-width: 19.7rem;
+                    }
+                    .circle-rotate{
+                        width: 7rem;
+                        height: 7rem;
+                        left: -35px;
+                        .arrow{
+                            max-width: 34px;
+                            right: 26px;
+                            left: 27px;
+                        }
+                    }
+                }
             }
         }
     }
