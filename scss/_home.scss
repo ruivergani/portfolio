@@ -465,3 +465,33 @@
         }
     }
 }
+.s-marquee{
+    width: 100%;
+    background-color: var(--gray-100);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0 auto;
+    overflow: hidden;
+    //white-space: nowrap;
+    display: flex;
+    align-items: center;
+    box-sizing: content-box;
+    gap: 88px;
+    .item-marquee{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0; // tell each item in this navigation not to shrink and assume the width of content 
+        gap: 20px;
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0.03em;
+            color: #030E15;
+            text-indent: 0;
+            padding-left: 24px;
+        }
+    }
+}
