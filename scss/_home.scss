@@ -603,6 +603,83 @@
                 }
             }
         }
-
+    }
+    // Responsive
+    @media (max-width: 850px){
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        .container{
+            .skills-title{
+                padding-bottom: 4rem;
+            }
+            .top-row, .bottom-row{
+                ul{
+                    grid-template-columns: 1fr;
+                    align-items: center;
+                    justify-content: center;
+                    li{
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        
+    }
+    @media (max-width: 600px){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .container{
+            .skills-title{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                h2{
+                    font-size: 26px;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+            .top-row{
+                padding-bottom: 20px;
+            }
+            .top-row, .bottom-row{
+                ul{
+                    grid-gap: 20px;
+                    li{
+                        .icon-skills-card{
+                            img{
+                                max-width: 85%;
+                            }
+                        }
+                        .text-skills-card{
+                            h3{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 475px){
+        .container{
+            .skills-title{
+                padding-bottom: 2rem;
+            }
+            .top-row{
+                padding-bottom: 15px;
+            }
+            .top-row, .bottom-row{
+                ul{
+                    grid-gap: 15px;
+                    li{
+                        padding: 26px;
+                    }
+                }
+            }
+        }
     }
 }
