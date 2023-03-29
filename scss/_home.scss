@@ -524,3 +524,85 @@
     }
     
 }
+.s-skills{
+    padding-top: 9.3rem;
+    padding-bottom: 8.9rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        .skills-title{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 6.1rem;
+            h2{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 120%;
+                color: #030E15;
+            }
+            p{
+                width: 100%;
+                max-width: 29.4rem;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: #78797A;
+                text-align: left;
+            }
+        }
+        .top-row{
+            padding-bottom: 32px;
+        }
+        .top-row, .bottom-row{
+            ul{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 32px;
+                overflow: hidden;
+                li{
+                    padding: 32px;
+                    background-color: #F7F7F7;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    transition: all .3s;
+                    .icon-skills-card{
+                        transition: all .25s ease-in-out;
+                        opacity: 1;
+                    }
+                    &:hover{
+                        .icon-skills-card, .text-skills-card{
+                            transform: translateY(-35px);
+                        }
+                        .icon-skills-card{
+                            opacity: 0;
+                        }
+                    }
+                    .text-skills-card{
+                        transition: all .3s;
+                        width: 100%;
+                        max-width: 27.3rem;
+                        h3{
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 120%;
+                            color: #030E15;
+                            margin-bottom: 16px;
+                        }
+                        p{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #78797A;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
