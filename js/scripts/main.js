@@ -1,3 +1,6 @@
+// Script Data AOS Animation
+AOS.init();
+
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
 if(btnScrollTop){

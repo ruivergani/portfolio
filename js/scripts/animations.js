@@ -16,6 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
     })
 })();
 
+
 window.addEventListener("optimizedScroll", function() {
     var e;
     document.querySelectorAll(".rotate").forEach(function(e) {

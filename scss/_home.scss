@@ -530,6 +530,9 @@
     .container{
         display: flex;
         flex-direction: column;
+        overflow-y: scroll;
+        overflow-y: visible;
+        -webkit-overflow-scrolling: touch;
         .skills-title{
             display: flex;
             justify-content: space-between;
