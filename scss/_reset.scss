@@ -18,8 +18,8 @@ html{
 svg, img{ 
     max-width: 100%;
 }
-button{
+button, a{
     background-color: transparent;
     border: none;
-    cursor: pointer;
+    cursor: pointer !important;
 }
