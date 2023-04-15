@@ -104,6 +104,13 @@
                         position: relative;
                         .bg-image{
                             max-width: 49rem;
+                            overflow: hidden;
+                            img{
+                                transition: all .5s;
+                                &:hover, &:focus{
+                                    transform: scale(1.05);
+                                }
+                            }      
                         }
                         .logo-slide{
                             position: absolute;
