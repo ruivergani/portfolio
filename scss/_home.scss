@@ -686,3 +686,245 @@
         }
     }
 }
+.s-about-me{
+    padding-bottom: 130px;
+    .container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 60px;
+        .about-me-image{
+            width: 100%;
+            max-width: 520px;
+            overflow: hidden;
+            img{
+                transition: all .5s;
+                &:hover, &:focus{
+                    transform: scale(1.1);
+                    cursor: url(../assets/icons/cursor-link-white.svg),auto;
+                }
+            }
+        }
+        .about-me-text{
+            padding-top: 25px;
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 64px;
+            .about-me-text-content{
+                span, h2, .subtitle-about-me-text, .description-about-me-text, .link-instagram{
+                    font-family: 'Inter', sans-serif;
+                }
+                span, h2, .subtitle-about-me-text, .link-instagram{
+                    font-weight: 600;
+                }
+                span, h2, .link-instagram, .subtitle-about-me-text{
+                    line-height: 120%;
+                    color: #030E15;
+                }
+                span{
+                    font-size: 18px;
+                    // Animation Icon Hand
+                    .icon-hand{
+                        width: 100%;
+                        max-width: 20px;
+                        margin-left: 5px;
+                        margin-bottom: -7px;
+                        -webkit-animation: iconhand 2s linear infinite alternate;
+                        animation: iconhand 2s linear infinite alternate;
+                        transform: translate3d(0, -6px, 0); // (tx, ty, tx)
+                    }
+                }
+                h2{
+                    font-size: 40px;
+                    padding-top: 24px;
+                }
+                .subtitle-about-me-text{
+                    font-size: 18px;
+                    padding-top: 5px;
+                }
+                .description-about-me-text{
+                    width: 100%;
+                    max-width: 530px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #78797A;
+                    padding-top: 48px;
+                }
+                .link-instagram{
+                    font-size: 14px;
+                    padding-top: 24px;
+                    display: inline-block;
+                    transition: all .3s;
+                    &:hover{
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+            .about-me-text-experience-list{
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                width: 100%;
+                li{
+                    width: 100%;
+                    min-width: 176px;
+                    background-color: var(--gray-100);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    padding-top: 19px;
+                    padding-bottom: 19px;
+                    transition: all .3s;
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 120%;
+                        color: #030E15;
+                    }
+                    &:hover{
+                        background-color: rgba(218, 220, 221, 0.4);
+                    }
+                }
+                .item-01, .item-03{
+                    padding-left: 14.5px;
+                    padding-right: 14.5px;
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 1300px){
+        .container{
+            .about-me-image{
+                max-width: 450px;
+            }
+        }
+    }
+    @media (max-width: 1220px){
+        .container{
+            gap: 20px;
+            .about-me-image{
+                max-width: 450px;
+            }
+            .about-me-text{
+                .about-me-text-experience-list{
+                    gap: 10px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1160px){
+        .container{
+            gap: 15px;
+            .about-me-image{
+                max-width: 400px;
+            }
+            .about-me-text{
+                padding-top: 10px;
+                gap: 30px;
+                .about-me-text-content{
+                    .description-about-me-text{
+                        padding-top: 25px;
+                    }
+                }
+                .about-me-text-experience-list{
+                    gap: 10px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1100px){
+        .container{
+            gap: 20px;
+            .about-me-image{
+                max-width: 380px;
+            }
+        }
+    }
+    @media (max-width: 1087px){
+        padding-bottom: 9rem;
+        .container{
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+            .about-me-image{
+                max-width: 450px;
+            }
+            .about-me-text{
+                min-width: 700px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                .about-me-text-content{
+                    .description-about-me-text{
+                        max-width: 700px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        padding-bottom: 6rem;
+        .container{
+            gap: 30px;
+            .about-me-image{
+                max-width: 400px;
+            }
+            .about-me-text{
+                max-width: 580px;
+                min-width: 620px;
+                .about-me-text-content{
+                    h2{
+                        font-size: 30px;
+                        padding-top: 15px;
+                    }
+                    span{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 660px){
+        .container{
+            .about-me-text{
+                min-width: 100%;
+                .about-me-text-experience-list{
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    li{
+                        max-width: 240px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        padding-bottom: 4rem;
+        .container{
+            gap: 20px;
+            .about-me-image{
+                max-width: 375px;
+            }
+            .about-me-text{
+                gap: 20px;
+                .about-me-text-content{
+                    .link-instagram{
+                        padding-top: 15px;
+                    }
+                    .description-about-me-text{
+                        padding-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
