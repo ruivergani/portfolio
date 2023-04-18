@@ -63,17 +63,17 @@
         <nav>
           <ul>
             <li>
-              <a href="">
+              <a href="#s-work">
                 Work
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#s-about-me">
                 About
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="#footer">
                 Contact
               </a>
             </li>
@@ -101,25 +101,25 @@
       <div class="menu-mobile">
         <ul>
           <li>
-            <a href="">
-              Quem sou
+            <a href="#s-about-me">
+              About
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#s-work">
               Cases
             </a>
           </li>
           <li>
-            <a href="">
-              Contato
+            <a href="#footer">
+              Contact
             </a>
           </li>
         </ul>
       </div>
     </header>
     <!-- === SECTION HERO === -->
-    <section class="s-hero">
+    <section class="s-hero" id="s-hero">
       <div class="container">
         <div class="left-content" data-aos="fade-right">
           <div class="content-text">
@@ -182,7 +182,7 @@
       </div>
     </section>
     <!-- === SECTION MARQUEE ===-->
-    <section class="s-marquee">
+    <section class="s-marquee" id="s-marquee">
       <div class="js-marquee">
         <div class="item-marquee">
           <img src="./assets/icons/icon-front-end.svg" alt="icon computer" title="icon computer">
@@ -263,7 +263,7 @@
       </div>
     </section>
     <!-- === SECTION SKILLS === -->
-    <section class="s-skills">
+    <section class="s-skills" id="s-skills">
       <div class="container">
         <div class="skills-title">
           <h2 data-aos="fade-right">Experience</h2>
@@ -334,33 +334,33 @@
       </div>
     </section>
     <!-- === SECTION ABOUT ME === -->
-    <section class="s-about-me">
+    <section class="s-about-me" id="s-about-me">
       <div class="container">
         <div class="about-me-image" data-aos="fade-right">
           <img src="./assets/bg/bg-about-me.jpg" alt="picture about me" title="picture about me" loading="lazy">
         </div>
-        <div class="about-me-text" data-aos="fade-left">
-          <div class="about-me-text-content">
+        <div class="about-me-text">
+          <div class="about-me-text-content" data-aos="fade-left">
             <span>Hello, nice to meet you
               <img src="./assets/icons/icon-hand.svg" alt="icon hand" title="icon hand" class="icon-hand">
             </span>
-            <h2>Rui Neto</h2>
-            <p class="subtitle-about-me-text">Developer Front end</p>
-            <p class="description-about-me-text">I'm a Computer Science student at Staffordshire University in London, United Kingdom and I've been working as a front-end developer for 5 years. My experiences in the area of programming made me evolve as a professional and programming became my favorite hobby.</p>
-            <a href="https://www.instagram.com/rui.vergani/" class="link-instagram" target="_blank">
+            <h2 data-aos="fade-left">Rui Neto</h2>
+            <p class="subtitle-about-me-text" data-aos="fade-left">Front-end Developer</p>
+            <p class="description-about-me-text" data-aos="fade-left">I'm a Computer Science student at Staffordshire University in London, United Kingdom and I've been working as a front-end developer for 4 years. My experiences in the area of programming made me evolve as a professional and programming became my favorite hobby.</p>
+            <a href="https://www.instagram.com/rui.vergani/" class="link-instagram" target="_blank" data-aos="fade-left">
               @rui.vergani
             </a>
           </div>
           <ul class="about-me-text-experience-list">
-            <li class="item-01">
+            <li class="item-01" data-aos="fade-up" data-aos-delay="100">
               <img src="./assets/icons/icon-lightning-sm.svg" alt="icon lightning" title="icon lightning">
               <p>+4 years of experience</p>
             </li>
-            <li class="item-02">
+            <li class="item-02" data-aos="fade-up" data-aos-delay="200">
               <img src="./assets/icons/icon-code-sm.svg" alt="icon code" title="icon code">
               <p>Developer</p>
             </li>
-            <li class="item-03">
+            <li class="item-03" data-aos="fade-up" data-aos-delay="300">
               <img src="./assets/icons/icon-desktop-sm.svg" alt="icon desktop" title="icon desktop">
               <p>Front end at One Sure</p>
             </li>
@@ -368,26 +368,40 @@
         </div>
       </div>
     </section>
+    <!-- === SECTION WORK SLIDE === -->
+    <section class="s-work" id="s-work">
+      <div class="container">
+        <div class="s-work-title">
+          <h2>Cases.</h2>
+          <p>2019 - 2023</p>
+        </div>
+      </div>
+      <div class="slide-area">
+        
+      </div>
+
+    </section>
+
 
     <!-- === FOOTER === -->
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="top-footer">
           <h3 data-aos="fade-right">Let’s talk about programming, design, business, or one of my hobbies like football or marvel?</h3>
-          <ul data-aos="fade-right">
-            <li>
+          <ul>
+            <li data-aos="fade-right" data-aos-delay="50">
               <a href="https://www.linkedin.com/in/ruivergani/" target="_blank">
                 <img src="./assets/icons/icon-linkedin.svg" alt="icon linkedin" title="icon linkedin">
                 <p>Linkedin</p>
               </a>
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-delay="100">
               <a href="https://www.instagram.com/rui.vergani/" target="_blank">
                 <img src="./assets/icons/icon-instagram.svg" alt="icon instagram" title="icon instagram">
                 <p>Instagram</p>
               </a>
             </li>
-            <li>
+            <li data-aos="fade-right" data-aos-delay="200">
               <a href="./assets/pdf/RuiVerganiNeto_CV.pdf" download="">
                 <img src="./assets/icons/icon-resume.svg" alt="icon resume" title="icon resume">
                 <p>Resume</p>

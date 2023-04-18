@@ -104,6 +104,7 @@
                         position: relative;
                         .bg-image{
                             max-width: 49rem;
+                            max-height: 611px;
                             overflow: hidden;
                             img{
                                 transition: all .5s;
@@ -244,6 +245,7 @@
                         .swiper-slide{
                             .bg-image{
                                 max-width: 43rem;
+                                max-height: 536px;
                             }
                             .logo-slide{
                                 bottom: 130px;
@@ -309,6 +311,7 @@
                         .swiper-slide{
                             .bg-image{
                                 max-width: 36rem;
+                                max-height: 448px;
                             }
                             .logo-slide{
                                right: -38px;
@@ -347,6 +350,7 @@
                         .swiper-slide{
                             .bg-image{
                                 max-width: 31rem;
+                                max-height: 386px;
                             }
                             .logo-slide{
                                 width: 100%;
@@ -399,6 +403,7 @@
                         .swiper-slide{
                             .bg-image{
                                 max-width: 28rem;
+                                max-height: 349px;
                             }
                             .logo-slide{
                                 width: 100%;
@@ -446,6 +451,7 @@
                         .swiper-slide{
                             .bg-image{
                                 max-width: 25rem;
+                                max-height: 311px;
                             }
                             .logo-slide{
                                 width: 100%;
@@ -694,6 +700,7 @@
     }
 }
 .s-about-me{
+    scroll-margin-top: 150px;
     padding-bottom: 130px;
     .container{
         display: flex;
@@ -703,7 +710,10 @@
         .about-me-image{
             width: 100%;
             max-width: 520px;
+            max-height: 549px;
             overflow: hidden;
+            background-position: center;
+            background-size: cover;
             img{
                 transition: all .5s;
                 &:hover, &:focus{
@@ -809,6 +819,7 @@
         .container{
             .about-me-image{
                 max-width: 450px;
+                max-height: 476px;
             }
         }
     }
@@ -830,6 +841,7 @@
             gap: 15px;
             .about-me-image{
                 max-width: 400px;
+                max-height: 423px;
             }
             .about-me-text{
                 padding-top: 10px;
@@ -882,6 +894,7 @@
             gap: 30px;
             .about-me-image{
                 max-width: 400px;
+                max-height: 422px;
             }
             .about-me-text{
                 max-width: 580px;
@@ -919,6 +932,7 @@
             gap: 20px;
             .about-me-image{
                 max-width: 375px;
+                max-height: 395px;
             }
             .about-me-text{
                 gap: 20px;
@@ -933,5 +947,16 @@
             }
         }
     }
-
+    @media (max-width: 435px){
+        .container{
+            .about-me-image{
+                img{
+                    transition: all .5s;
+                    &:hover, &:focus{
+                        transform: none;
+                    }
+                }
+            }
+        }
+    }
 }
