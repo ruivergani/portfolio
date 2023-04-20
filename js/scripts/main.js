@@ -34,7 +34,7 @@ document.addEventListener("scroll", fixedMenu);
 
 const progressSlide = document.querySelector('.js-progress'); // get progress bar
 
-// Script for Swipper Slide
+// Script for Hero Slide
 var swiper = new Swiper(".slide-principal", {
     autoplay: {
         delay: 5000,
@@ -62,4 +62,42 @@ var swiper = new Swiper(".slide-principal", {
           progressSlide.classList.add('animate'); // um apos o outro - nao pode adicionar junto
         }
       }
+});
+
+// Script for Cases Slide
+var slide_image_cases = new Swiper(".slide-image-cases",{
+  slidesPerView: 2.2,
+  spaceBetween: 43,
+  loop: !0,
+  speed: 800,
+  centeredSlides: !0,
+  watchSlidesVisibility: !0,
+  watchSlidesProgress: !0,
+  pagination: {
+    el: ".pagination-box-cases"
+  },
+  navigation: {
+    nextEl: ".s-cases .ctrl-slide .btn-next",
+    prevEl: ".s-cases .ctrl-slide .btn-prev"
+  }
+});
+
+var slide_about_case = new Swiper(".slide-about-case",{
+  spaceBetween: 40,
+  direction: "vertical",
+  loop: !0,
+  speed: 800,
+  pagination: {
+    el: ".page-fraction",
+    clickable: true,
+    type: "fraction"
+  },
+  navigation: {
+    nextEl: ".s-cases .ctrl-slide .btn-next",
+    prevEl: ".s-cases .ctrl-slide .btn-prev"
+  },
+  simulateTouch: !1,
+  thumbs: {
+    swiper: slide_image_cases
+  }
 });
