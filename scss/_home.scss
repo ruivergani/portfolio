@@ -1230,18 +1230,17 @@
             cursor: pointer;
             gap: 24px;
             .btn{
+                min-width: 16px;
                 transition: all 0.3s;
                 opacity: 1;
                 cursor: pointer;
-                &.btn-next{
-                    margin-top: -1px;
+                &-next{
+                    margin-top: -2px;
                 }
+                // class default by swiper pagination
                 &.swiper-button-disabled{
                     opacity: 0.25;
                     pointer-events: none;
-                    -webkit-transition: all 0.3s;
-                    -o-transition: all 0.3s;
-                    transition: all 0.3s;
                 }
             }
         }
