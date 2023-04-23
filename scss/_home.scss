@@ -1179,6 +1179,7 @@
             width: auto;
             // Numbers
             &.page-fraction{
+                margin-left: -150px !important;
                 &.swiper-pagination-fraction{
                     span{
                         font-family: 'Inter', sans-serif;
