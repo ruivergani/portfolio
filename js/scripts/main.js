@@ -76,9 +76,9 @@ var slide_image_cases = new Swiper(".slide-image-cases",{
   watchSlidesProgress: !0,
   clickable: false,
   preventClicks: true,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   pagination: {
     el: ".s-cases .ctrl-slide .pagination-box-cases",
     clickable: false,
@@ -94,9 +94,9 @@ var slide_about_case = new Swiper(".slide-about-case",{
   direction: "vertical",
   speed: 800,
   simulateTouch: !1,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  autoplay: {
+    delay: 5000,
+  },
   pagination: {
     el: ".s-cases .ctrl-slide .page-fraction",
     type: "fraction",
