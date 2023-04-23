@@ -67,15 +67,16 @@ var swiper = new Swiper(".slide-principal", {
 // Script for Cases Slide
 var slide_image_cases = new Swiper(".slide-image-cases",{
   slidesPerView: 2.2,
-  spaceBetween: 32,
+  spaceBetween: 0,
   loop: !0,
   speed: 800,
   centeredSlides: !0,
   watchSlidesVisibility: !0,
   watchSlidesProgress: !0,
+  clickable: false,
+  preventClicks: true,
   pagination: {
     el: ".s-cases .ctrl-slide .pagination-box-cases",
-    clickable: true,
   },
   navigation: {
     nextEl: ".s-cases .ctrl-slide .btn-next",
@@ -84,7 +85,7 @@ var slide_image_cases = new Swiper(".slide-image-cases",{
 });
 
 var slide_about_case = new Swiper(".slide-about-case",{
-  spaceBetween: 40,
+  spaceBetween: 0,
   direction: "vertical",
   speed: 800,
   pagination: {
@@ -95,7 +96,6 @@ var slide_about_case = new Swiper(".slide-about-case",{
     nextEl: ".s-cases .ctrl-slide .btn-next",
     prevEl: ".s-cases .ctrl-slide .btn-prev"
   },
-  simulateTouch: !1,
   thumbs: {
     swiper: slide_image_cases
   }
