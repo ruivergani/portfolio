@@ -267,12 +267,24 @@
             .left-content{
                 max-width: 100%;
                 padding-top: 8rem;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
                 .content-text{
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
                     h1{
                         font-size: 50px;
                     }
                     p{
                         margin-bottom: 4rem;
+                        margin: 0 auto;
+                        padding-bottom: 4rem;
+                    }
+                    .project-link{
+                        display: inline-block;
+                        margin: 0 auto;
                     }
                 }
             }
@@ -622,12 +634,37 @@
         }
     }
     // Responsive
+    @media (max-width: 1090px){
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        .container{
+            .skills-title{
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                align-items: center;
+                padding-bottom: 4rem;
+            }
+            .top-row, .bottom-row{
+                ul{
+                    li{
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
     @media (max-width: 850px){
         padding-top: 6rem;
         padding-bottom: 6rem;
         .container{
             .skills-title{
                 padding-bottom: 4rem;
+                h2{
+                    font-size: 30px;
+                }
+
             }
             .top-row, .bottom-row{
                 ul{
@@ -866,7 +903,7 @@
             }
         }
     }
-    @media (max-width: 1087px){
+    @media (max-width: 1090px){
         padding-bottom: 9rem;
         .container{
             flex-direction: column;
@@ -1059,7 +1096,7 @@
             position: relative; // it must be any position to work with z-index
             display: flex;
             align-items: flex-start;
-            justify-content: end;
+            justify-content: flex-end;
             .slide-about-case{
                 width: 416px;
                 height: 501px;
@@ -1298,11 +1335,27 @@
         }
         
     }
-    @media (max-width: 480px){
+    @media (max-width: 1090px){
         .container{
             .s-work-title{
                 flex-direction: column;
                 gap: 15px;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            .s-work-title{
+                h2{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .container{
+            .s-work-title{
+                
             }
         }
     }
