@@ -1329,6 +1329,72 @@
         }
     }
     @media (max-width: 1260px){
+        margin-bottom: 6rem;
+        .container{
+            // Mobile Slide
+            .slide-cases-mobile{
+                display: block;
+                margin-top: 6rem;
+                width: 100%;
+                height: 100%;
+                .swiper-slide{
+                    background-color: #F7F7F7;
+                    padding-top: 60px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                    padding-bottom: 45px;
+                    .case-box{
+                        display: flex;
+                        align-items: center;
+                        gap: 50px;
+                        flex-direction: column;
+                        .img-case{
+                            img{
+                                width: 100%;
+                                max-width: 500px;
+                                object-fit: cover;
+                            }
+                        }
+                        .case-box-title{
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                            align-items: center;
+                            h6{
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 150%;
+                                color: #030E15;
+                            }
+                            a{
+                                display: flex;
+                                align-items: center;
+                                gap: 16px;
+                                .project-link{
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                    letter-spacing: 3px;
+                                    text-transform: uppercase;
+                                    color: #030E15;
+                                    transition: all .3s;
+                                    padding-bottom: 0px;
+                                }
+                                &:hover{
+                                    p{
+                                        color: rgba(0, 8, 17, 0.9);
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
         .area-cases, .ctrl-slide{
             display: none;
             pointer-events: none;
@@ -1349,13 +1415,6 @@
                 h2{
                     font-size: 30px;
                 }
-            }
-        }
-    }
-    @media (max-width: 480px){
-        .container{
-            .s-work-title{
-                
             }
         }
     }

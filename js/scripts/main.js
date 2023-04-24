@@ -103,3 +103,16 @@ var slide_about_case = new Swiper(".slide-about-case",{
     swiper: slide_image_cases
   }
 });
+
+// Script for Mobile Navigation
+var slide_mobile_case = new Swiper(".slide-cases-mobile", {
+  spaceBetween: 0,
+  pagination: {
+    el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
