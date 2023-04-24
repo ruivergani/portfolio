@@ -1014,7 +1014,7 @@
             left: 0;
             overflow: hidden;
             pointer-events: none;
-            width: 1400px;
+            width: 1500px;
             .swiper-wrapper{
                 position: relative;
                 display: flex;
@@ -1200,10 +1200,10 @@
                 &.swiper-pagination-bullets{
                     display: flex;
                     align-items: center;
-                    gap: 14px;
+                    gap: 6px;
                     transition: all 0.3s;
                     .swiper-pagination-bullet{
-                        width: 25px;
+                        width: 24px;
                         height: 4px;
                         border-radius: 0px;
                         background: #DADCDD;

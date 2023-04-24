@@ -70,15 +70,12 @@ var slide_image_cases = new Swiper(".slide-image-cases",{
   slidesPerView: 'auto',
   spaceBetween: 32,
   loop: !0,
-  speed: 800,
+  speed: 600,
   centeredSlides: !0,
   watchSlidesVisibility: !0,
   watchSlidesProgress: !0,
   clickable: false,
   preventClicks: true,
-  autoplay: {
-    delay: 5000,
-  },
   pagination: {
     el: ".s-cases .ctrl-slide .pagination-box-cases",
     clickable: false,
@@ -90,13 +87,11 @@ var slide_image_cases = new Swiper(".slide-image-cases",{
 });
 
 var slide_about_case = new Swiper(".slide-about-case",{
+  slidesPerView: 'auto',
   spaceBetween: 0,
   direction: "vertical",
-  speed: 800,
+  speed: 600,
   simulateTouch: !1,
-  autoplay: {
-    delay: 5000,
-  },
   pagination: {
     el: ".s-cases .ctrl-slide .page-fraction",
     type: "fraction",
