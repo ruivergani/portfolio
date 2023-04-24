@@ -589,13 +589,13 @@
                         opacity: 1;
                     }
                     &:hover{
-                        // .icon-skills-card, .text-skills-card{
-                        //     transform: translateY(-35px);
-                        // }
-                        // .icon-skills-card{
-                        //     opacity: 0;
-                        // }
-                        background-color: rgba(218, 220, 221, 0.4);
+                        .icon-skills-card, .text-skills-card{
+                            transform: translateY(-35px);
+                        }
+                        .icon-skills-card{
+                            opacity: 0;
+                        }
+                        //background-color: rgba(218, 220, 221, 0.4);
                     }
                     .text-skills-card{
                         transition: all .3s;
