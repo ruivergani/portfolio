@@ -106,7 +106,6 @@ var slide_about_case = new Swiper(".slide-about-case",{
 
 // Script for Mobile Navigation
 var slide_mobile_case = new Swiper(".slide-cases-mobile", {
-  spaceBetween: 0,
   pagination: {
     el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
     type: "progressbar",
