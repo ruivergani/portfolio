@@ -571,7 +571,7 @@
             }
             p{
                 width: 100%;
-                max-width: 29.4rem;
+                max-width: 34.4rem;
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
                 font-size: 16px;
@@ -644,6 +644,9 @@
                 gap: 20px;
                 align-items: center;
                 padding-bottom: 4rem;
+                p{
+                    text-align: center;
+                }
             }
             .top-row, .bottom-row{
                 ul{
@@ -664,7 +667,7 @@
                 h2{
                     font-size: 30px;
                 }
-
+                
             }
             .top-row, .bottom-row{
                 ul{
