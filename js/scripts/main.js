@@ -1,5 +1,7 @@
 // Script Data AOS Animation
-AOS.init();
+AOS.init({
+  disable: "mobile"
+});
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");

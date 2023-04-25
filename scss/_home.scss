@@ -1035,77 +1035,78 @@
         .slide-cases-mobile{
             display: none;
             margin-top: 6rem;
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                .swiper-wrapper{
-                    position: relative;
-                    .swiper-slide{
-                        background-color: #F7F7F7;
-                        padding-top: 60px;
-                        padding-left: 60px;
-                        padding-right: 60px;
-                        padding-bottom: 45px;
-                        .case-box{
-                            display: flex;
-                            align-items: center;
-                            gap: 50px;
-                            flex-direction: column;
-                            .img-case{
-                                img{
-                                    width: 100%;
-                                    max-width: 500px;
-                                    object-fit: cover;
-                                }
-                            }
-                            .case-box-title{
-                                display: flex;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position:  relative !important;
+            .swiper-wrapper{
+                position: relative !important;
+                .swiper-slide{
+                    background-color: #F7F7F7;
+                    padding-top: 60px;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                    padding-bottom: 45px;
+                    .case-box{
+                        display: flex;
+                        align-items: center;
+                        gap: 50px;
+                        flex-direction: column;
+                        .img-case{
+                            img{
                                 width: 100%;
-                                justify-content: space-between;
+                                max-width: 500px;
+                                object-fit: cover;
+                            }
+                        }
+                        .case-box-title{
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                            align-items: center;
+                            h6{
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 150%;
+                                color: #030E15;
+                            }
+                            a{
+                                display: flex;
                                 align-items: center;
-                                h6{
+                                gap: 16px;
+                                .project-link{
                                     font-family: 'Inter', sans-serif;
                                     font-weight: 600;
-                                    font-size: 20px;
+                                    font-size: 16px;
                                     line-height: 150%;
+                                    letter-spacing: 3px;
+                                    text-transform: uppercase;
                                     color: #030E15;
+                                    transition: all .3s;
+                                    padding-bottom: 0px;
                                 }
-                                a{
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 16px;
-                                    .project-link{
-                                        font-family: 'Inter', sans-serif;
-                                        font-weight: 600;
-                                        font-size: 16px;
-                                        line-height: 150%;
-                                        letter-spacing: 3px;
-                                        text-transform: uppercase;
-                                        color: #030E15;
-                                        transition: all .3s;
-                                        padding-bottom: 0px;
-                                    }
-                                    &:hover{
-                                        p{
-                                            color: rgba(0, 8, 17, 0.9);
-                                            text-decoration: underline;
-                                        }
+                                &:hover{
+                                    p{
+                                        color: rgba(0, 8, 17, 0.9);
+                                        text-decoration: underline;
                                     }
                                 }
-                                .arrow-mb-slide{
-                                    display: none;
-                                    pointer-events: none;
-                                }
+                            }
+                            .arrow-mb-slide{
+                                display: none;
+                                pointer-events: none;
                             }
                         }
                     }
                 }
-                .swiper-pagination-progressbar{
-                    background: #9A9D9E;
-                    .swiper-pagination-progressbar-fill{
-                        background: #2D3235;
-                    }
+            }
+            .swiper-pagination-progressbar{
+                background: #9A9D9E;
+                .swiper-pagination-progressbar-fill{
+                    background: #2D3235;
                 }
+            }
         }
     }
     // Slide Area
