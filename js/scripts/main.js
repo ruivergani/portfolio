@@ -83,9 +83,8 @@ var slide_image_cases = new Swiper(".slide-image-cases",{
     nextEl: ".s-cases .ctrl-slide .btn-next",
     prevEl: ".s-cases .ctrl-slide .btn-prev"
   }
-});
-
-var slide_about_case = new Swiper(".slide-about-case",{
+}),
+slide_about_case = new Swiper(".slide-about-case",{
   spaceBetween: 0,
   direction: "vertical",
   speed: 800,
@@ -102,10 +101,10 @@ var slide_about_case = new Swiper(".slide-about-case",{
   thumbs: {
     swiper: slide_image_cases
   }
-});
-
+}),
 // Script for Mobile Navigation
-var slide_mobile_case = new Swiper(".slide-cases-mobile", {
+ slide_mobile_case = new Swiper(".slide-cases-mobile", {
+  slidesPerView: 'auto',
   pagination: {
     el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
     type: "progressbar",

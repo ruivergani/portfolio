@@ -1092,6 +1092,10 @@
                                         }
                                     }
                                 }
+                                .arrow-mb-slide{
+                                    display: none;
+                                    pointer-events: none;
+                                }
                             }
                         }
                     }
@@ -1402,7 +1406,6 @@
             // Mobile Slide
             .slide-cases-mobile{
                 display: block;
-                
             }
         }
         .area-cases, .ctrl-slide{
@@ -1424,6 +1427,88 @@
             .s-work-title{
                 h2{
                     font-size: 30px;
+                }
+            }
+        }
+    }
+    @media (max-width: 700px){
+        height: 590px;
+        .container{
+            .slide-cases-mobile{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        padding-top: 4rem;
+                        padding-left: 4rem;
+                        padding-right: 4rem;
+                        padding-bottom: 3rem;
+                        .case-box{
+                            gap: 3rem;
+                            .case-box-title{
+                                h6{
+                                    font-size: 18px;
+                                }
+                                .project-link, .arrow-project-slide{
+                                    display: none;
+                                    pointer-events: none;
+                                }
+                                .arrow-mb-slide{
+                                    display: block;
+                                    pointer-events: all;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 600px){
+        height: 480px;
+        .container{
+            .slide-cases-mobile{
+                margin-top: 4rem;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        padding-top: 3rem;
+                        padding-left: 3rem;
+                        padding-right: 3rem;
+                        padding-bottom: 3rem;
+                        .case-box{
+                            .img-case{
+                                max-width: 390px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        height: 43rem;
+    }
+    @media (max-width: 375px){
+        height: 38rem;
+        .container{
+            .slide-cases-mobile{
+                margin-top: 3rem;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        padding-top: 2rem;
+                        padding-left: 2rem;
+                        padding-right: 2rem;
+                        padding-bottom: 2rem;
+                        .case-box{
+                            gap: 2rem;
+                            .img-case{
+                                max-width: 400px;
+                            }
+                            .case-box-title{
+                                h6{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
