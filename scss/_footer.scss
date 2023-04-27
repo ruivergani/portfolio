@@ -90,6 +90,7 @@ footer{
                     transition: all .3s ease;
                     &:hover{
                         opacity: 1;
+                        background-color: var(--gray-100);
                     }
                     img{
                         max-width: 1.3rem;
