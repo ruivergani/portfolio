@@ -73,7 +73,7 @@ var slide_image_cases = new Swiper(".slide-image-cases",{
   spaceBetween: 32,
   loop: !0,
   speed: 800,
-  centeredSlides: !0,
+  centeredSlides: true,
   watchSlidesVisibility: !0,
   watchSlidesProgress: !0,
   preventClicks: true,

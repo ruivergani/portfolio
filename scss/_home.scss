@@ -1343,6 +1343,9 @@
                 transition: all 0.3s;
                 opacity: 1;
                 cursor: pointer;
+                img{
+                    min-width: 17px;
+                }
                 &-next{
                     margin-top: -2px;
                 }
@@ -1400,7 +1403,7 @@
     @media (max-width: 1450px){
         .area-cases{
             .slide-image-cases{
-                left: -230px;
+                left: -250px !important;
             }
         }
     }
