@@ -3,8 +3,6 @@ AOS.init({
   disable: "mobile"
 });
 
-
-
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
 const imgBtnScrollTop = document.getElementById("js-img-footer");
@@ -17,6 +15,9 @@ if(btnScrollTop){
     }),
     btnScrollTop.addEventListener('mouseover', () => {
       imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer-black.svg');
+    }),
+    btnScrollTop.addEventListener('mouseleave', () => {
+      imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer.svg');
     })
 }
 // Add class active to menu button
