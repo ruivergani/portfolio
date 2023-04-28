@@ -71,6 +71,14 @@ header{
                                 bottom: -48%;
                             }
                         }
+                        &.active{
+                            color:var(--gray-200);
+                            cursor: url(../assets/icons/cursor-link-white.svg),auto;
+                            &::after{
+                                opacity: .8;
+                                bottom: -48%;
+                            }
+                        }
                     }
                 }
             }
