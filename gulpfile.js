@@ -44,7 +44,7 @@ gulp.task('allJS', gulpJS);
 // Concat all plugins JS
 function pluginsJS(){
     return gulp
-    .src(['./js/lib/aos.min.js']) // name of files
+    .src(['./js/lib/aos.min.js', './js/lib/swiper.min.js']) // name of files
     .pipe(concat('plugins.js')) // all these files will be going into plugins.js
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.stream())

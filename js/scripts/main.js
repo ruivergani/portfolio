@@ -40,14 +40,49 @@ function fixedMenu() {
 }
 document.addEventListener("scroll", fixedMenu);
 
-
 const progressSlide = document.querySelector('.js-progress'); // get progress bar
 
-// Script for Hero Slide
-var swiper = new Swiper(".slide-principal", {
+// Script for Cases Slide
+"use strict";
+  var slide_image_cases = new Swiper(".slide-image-cases",{
+      slidesPerView: 'auto',
+      spaceBetween: 32,
+      loop: !0,
+      speed: 800,
+      centeredSlides: !0,
+      watchSlidesVisibility: !0,
+      watchSlidesProgress: !0,
+      pagination: {
+        el: ".s-cases .ctrl-slide .pagination-box-cases",
+      },
+      navigation: {
+        nextEl: ".s-cases .ctrl-slide .btn-next",
+        prevEl: ".s-cases .ctrl-slide .btn-prev"
+      },
+  }),
+  slide_about_case = new Swiper(".slide-about-case",{
+      spaceBetween: 40,
+      direction: "vertical",
+      speed: 800,
+      pagination: {
+        el: ".s-cases .ctrl-slide .page-fraction",
+        type: "fraction",
+        clickable: false,
+      },
+      navigation: {
+        nextEl: ".s-cases .ctrl-slide .btn-next",
+        prevEl: ".s-cases .ctrl-slide .btn-prev"
+      },
+      simulateTouch: !1,
+      thumbs: {
+        swiper: slide_image_cases,
+      },
+  }),
+  // Script for Hero Slide
+  swiper = new Swiper(".slide-principal", {
     autoplay: {
-        delay: 5000,
-        disableOnInteraction: false // autoplay nao para de funcionar
+      delay: 5000,
+      disableOnInteraction: false // autoplay nao para de funcionar
     },
     effect: 'fade',
     pagination: {
@@ -71,55 +106,16 @@ var swiper = new Swiper(".slide-principal", {
           progressSlide.classList.add('animate'); // um apos o outro - nao pode adicionar junto
         }
       }
-});
-
-// Script for Cases Slide
-"use strict";
-var slide_image_cases = new Swiper(".slide-image-cases",{
-  slidesPerView: 'auto',
-  spaceBetween: 32,
-  loop: !0,
-  speed: 800,
-  centeredSlides: true,
-  watchSlidesVisibility: !0,
-  watchSlidesProgress: !0,
-  preventClicks: true,
-  pagination: {
-    el: ".s-cases .ctrl-slide .pagination-box-cases",
-    clickable: false,
-  },
-  navigation: {
-    nextEl: ".s-cases .ctrl-slide .btn-next",
-    prevEl: ".s-cases .ctrl-slide .btn-prev"
-  }
-}),
-slide_about_case = new Swiper(".slide-about-case",{
-  spaceBetween: 0,
-  direction: "vertical",
-  speed: 800,
-  simulateTouch: !1,
-  pagination: {
-    el: ".s-cases .ctrl-slide .page-fraction",
-    type: "fraction",
-    clickable: false,
-  },
-  navigation: {
-    nextEl: ".s-cases .ctrl-slide .btn-next",
-    prevEl: ".s-cases .ctrl-slide .btn-prev"
-  },
-  thumbs: {
-    swiper: slide_image_cases
-  }
-}),
-// Script for Mobile Navigation
- slide_mobile_case = new Swiper(".slide-cases-mobile", {
-  slidesPerView: 'auto',
-  pagination: {
-    el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+  }),
+  // Script for Mobile Navigation
+  slide_mobile_case = new Swiper(".slide-cases-mobile", {
+      slidesPerView: 'auto',
+      pagination: {
+        el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+  });

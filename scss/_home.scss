@@ -759,7 +759,6 @@
                 transition: all .5s;
                 &:hover, &:focus{
                     transform: scale(1.1);
-                    cursor: url(../assets/icons/cursor-link-white.svg),auto;
                 }
             }
         }
@@ -1126,8 +1125,8 @@
             top: 0;
             left: 0;
             overflow: hidden;
-            pointer-events: none;
             width: 1500px;
+            pointer-events: none;
             .swiper-wrapper{
                 position: relative;
                 display: flex;
@@ -1156,6 +1155,7 @@
                         max-width: 592px;
                         max-height: 501px;
                         overflow: hidden;
+                        background-color: var(--gray-100);
                         img{
                             display: block;
                             width: 100%;
@@ -1169,7 +1169,6 @@
         }
         // About Text Area
         .container{
-            position: relative; // it must be any position to work with z-index
             display: flex;
             align-items: flex-start;
             justify-content: flex-end;
@@ -1403,7 +1402,7 @@
     @media (max-width: 1450px){
         .area-cases{
             .slide-image-cases{
-                left: -250px !important;
+                left: -10% !important;
             }
         }
     }

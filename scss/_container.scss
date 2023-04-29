@@ -4,3 +4,8 @@
     margin: 0 auto;
     padding: 0 2.5rem;
 }
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
