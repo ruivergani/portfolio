@@ -1402,7 +1402,14 @@
     @media (max-width: 1450px){
         .area-cases{
             .slide-image-cases{
-                left: -10% !important;
+                left: -13% !important;
+            }
+        }
+    }
+    @media (max-width: 1380px){
+        .area-cases{
+            .slide-image-cases{
+                left: -20% !important;
             }
         }
     }

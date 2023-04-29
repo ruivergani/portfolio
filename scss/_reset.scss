@@ -16,6 +16,10 @@ html{
     scroll-behavior: smooth;
     cursor: url(../assets/icons/cursor-black.svg),auto;
 }
+main{
+    position: relative !important;
+    min-height: 100vh;
+}
 svg, img{ 
     max-width: 100%;
 }
