@@ -1,6 +1,31 @@
 // Script Data AOS Animation
 AOS.init();
 
+// Script for Mobile Navigation
+const slide_mobile_case = new Swiper(".slide-cases-mobile", {
+  slidesPerView: 1,
+  speed: 600,
+  pagination: {
+    el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1
+    }, 
+  },
+  // ...
+  on: {
+    init: function () {
+      console.log('swiper initialized');
+    },
+  },
+});
+
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
 const imgBtnScrollTop = document.getElementById("js-img-footer");
@@ -39,8 +64,9 @@ function fixedMenu() {
 document.addEventListener("scroll", fixedMenu);
 
 const progressSlide = document.querySelector('.js-progress'); // get progress bar
+
 // Script for Hero Slide
-var swiper = new Swiper(".slide-principal", {
+const swiper = new Swiper(".slide-principal", {
   autoplay: {
     delay: 5000,
     disableOnInteraction: false // autoplay nao para de funcionar
@@ -69,7 +95,7 @@ var swiper = new Swiper(".slide-principal", {
     }
 });
 // Script for Slide Image Cases
-var slide_image_cases = new Swiper(".slide-image-cases",{
+const slide_image_cases = new Swiper(".slide-image-cases",{
   slidesPerView: 'auto',
   spaceBetween: 32,
   loop: !0,
@@ -86,7 +112,7 @@ var slide_image_cases = new Swiper(".slide-image-cases",{
   },
 });
 // Script for Slide About Cases
-var slide_about_case = new Swiper(".slide-about-case",{
+const slide_about_case = new Swiper(".slide-about-case",{
   spaceBetween: 40,
   direction: "vertical",
   speed: 800,
@@ -104,15 +130,4 @@ var slide_about_case = new Swiper(".slide-about-case",{
     swiper: slide_image_cases,
   },
 });
-// Script for Mobile Navigation
-var slide_mobile_case = new Swiper(".slide-cases-mobile", {
-  slidesPerView: 'auto',
-  pagination: {
-    el: ".s-cases .container .slide-cases-mobile .swiper-pagination",
-    type: "progressbar",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+
