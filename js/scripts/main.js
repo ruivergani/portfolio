@@ -34,7 +34,8 @@ if(btnScrollTop){
         window.scrollTo({
           top: 0,
           behavior: "smooth"
-        });
+        }),
+        imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer.svg');
     }),
     btnScrollTop.addEventListener('mouseover', () => {
       imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer-black.svg');

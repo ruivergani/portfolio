@@ -98,7 +98,7 @@
         line-height: 100%;
         color: #030E15;
         line-height:48px;
-        transition: all .3s;
+        transition: all .3s ease-in-out;
         &:hover, &:focus{
             color: var(--gray-100);
             background-color: #030E15;
