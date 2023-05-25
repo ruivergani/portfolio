@@ -35,13 +35,13 @@ if(btnScrollTop){
           top: 0,
           behavior: "smooth"
         }),
-        imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer.svg');
+        imgBtnScrollTop.setAttribute('src', './assets/icons/icon-arrow-up-footer.svg');
     }),
     btnScrollTop.addEventListener('mouseover', () => {
-      imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer-black.svg');
+      imgBtnScrollTop.setAttribute('src', './assets/icons/icon-arrow-up-footer-black.svg');
     }),
     btnScrollTop.addEventListener('mouseleave', () => {
-      imgBtnScrollTop.setAttribute('src', '/assets/icons/icon-arrow-up-footer.svg');
+      imgBtnScrollTop.setAttribute('src', './assets/icons/icon-arrow-up-footer.svg');
     })
 }
 // Add class active to menu button
@@ -131,4 +131,3 @@ const slide_about_case = new Swiper(".slide-about-case",{
     swiper: slide_image_cases,
   },
 });
-
