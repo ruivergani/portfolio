@@ -47,11 +47,19 @@ if(btnScrollTop){
 // Add class active to menu button
 const menuButton = document.getElementById('js-menu-button');
 if(menuButton){
-    menuButton.addEventListener('click', () => {
-        menuButton.classList.toggle('is-active'); // add the CSS configuration on this button
-        document.documentElement.classList.toggle('menu-opened');
-    })
+  menuButton.addEventListener('click', () => {
+    menuButton.classList.toggle('is-active'); // add the CSS configuration on this button
+    document.documentElement.classList.toggle('menu-opened');
+  })
 }
+// Close menu button when clicks to the links
+const menuMobileNav = document.querySelectorAll('.js-menu-mobile li a');
+menuMobileNav.forEach((item) => {
+  item.addEventListener('click', function(){
+    document.documentElement.classList.remove('menu-opened');
+    menuButton.classList.remove('is-active');
+  })
+})
 
 // Menu Header Change >20 scroll
 const header = document.getElementById("js-header");
@@ -162,6 +170,5 @@ function changeActiveNav() {
     });
   });
 }
-
 // Call the function to start tracking scroll positions and updating the active navigation
 changeActiveNav();

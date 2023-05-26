@@ -150,7 +150,7 @@ header{
         top: 8.8rem; // size of header nav
         height: calc(100vh - 88px); // viewport height
         width: 100%;
-        background: var(--brand-gradient);
+        background: linear-gradient(115.6deg, #000811 -7.5%, rgba(0, 14, 23, 0.95) 105.49%);
         transform: translateY(100%);
         transition: all .3s ease;
         opacity: 0;
@@ -160,12 +160,12 @@ header{
             align-items: center;
             flex-direction: column;
             margin-bottom: 4rem;
-            gap: 2rem;
+            gap: 3rem;
             li{
                 a{
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    font-size: 1.6rem;
+                    font-size: 18px;
                     line-height: 1.9rem;
                     text-align: center;
                     color: var(--gray-100);
