@@ -58,24 +58,24 @@
     <!-- === MODALS === -->
 
     <!-- === HEADER === -->
-    <header id="js-header">
+    <header id="js-header" class="js-header">
       <div class="container">
         <a href="index.html" class="logo">
           <img src="./assets/logos/logo-oficial.svg" alt="Logo Rui Vergani Neto" title="Logo Rui Vergani Neto" aria-label="Logo Rui Vergani Neto">
         </a>
-        <nav>
+        <nav class="js-nav-desktop" id="js-nav-desktop">
           <ul>
-            <li>
-              <a href="#s-cases">
-                Cases
-              </a>
-            </li>
-            <li>
-              <a href="#s-about-me">
+            <li class="nav-item">
+              <a href="#about">
                 About
               </a>
             </li>
-            <li>
+            <li class="nav-item">
+              <a href="#cases">
+                Cases
+              </a>
+            </li>
+            <li class="nav-item">
               <a href="#footer">
                 Contact
               </a>
@@ -104,12 +104,12 @@
       <div class="menu-mobile">
         <ul>
           <li>
-            <a href="#s-about-me">
+            <a href="#about">
               About
             </a>
           </li>
           <li>
-            <a href="#s-cases">
+            <a href="#cases">
               Cases
             </a>
           </li>
@@ -270,7 +270,7 @@
       </div>
     </section>
     <!-- === SECTION SKILLS === -->
-    <section class="s-skills" id="s-skills">
+    <section class="s-skills" id="skills sect">
       <div class="container">
         <div class="skills-title">
           <h2 data-aos="fade-right" data-aos-once="true">Experience</h2>
@@ -341,7 +341,7 @@
       </div>
     </section>
     <!-- === SECTION ABOUT ME === -->
-    <section class="s-about-me" id="s-about-me">
+    <section class="s-about-me section" id="about">
       <div class="container">
         <div class="about-me-image" data-aos="fade-right" data-aos-once="true">
           <img src="./assets/bg/bg-about-me.jpg" alt="picture about me" title="picture about me" loading="lazy" aria-label="picture about me">
@@ -376,7 +376,7 @@
       </div>
     </section>
     <!-- === SECTION WORK SLIDE === -->
-    <section class="s-cases" id="s-cases">
+    <section class="s-cases section" id="cases">
       <div class="container">
         <!-- TITLE SLIDE AREA -->
         <div class="s-work-title">
@@ -916,7 +916,7 @@
     </section>
 
     <!-- === FOOTER === -->
-    <footer id="footer">
+    <footer id="footer" class="section">
       <div class="container">
         <div class="top-footer">
           <h3 data-aos="fade-right" data-aos-once="true">Let’s talk about programming, design, or one of my hobbies like football or books?</h3>

@@ -131,3 +131,37 @@ const slide_about_case = new Swiper(".slide-about-case",{
     swiper: slide_image_cases,
   },
 });
+
+// Change active class of header link
+function changeActiveNav() {
+  // Get all the navigation links
+  const navLinks = document.querySelectorAll('.nav-item');
+
+  // Get the sections in the landing page
+  const sections = document.querySelectorAll('.section');
+
+  // Add an event listener to the window scroll event
+  window.addEventListener('scroll', () => {
+    // Get the current scroll position
+    const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Iterate through each section
+    sections.forEach((section, index) => {
+      // Calculate the top and bottom positions of the section
+      const sectionTop = section.offsetTop - 150; // Offset by 50px to account for padding/margin
+      const sectionBottom = sectionTop + section.offsetHeight;
+
+      // Check if the current scroll position is within the section's boundaries
+      if (currentScrollPos >= sectionTop && currentScrollPos < sectionBottom) {
+        // Add the 'active' class to the corresponding navigation link
+        navLinks[index].classList.add('active');
+      } else {
+        // Remove the 'active' class from other navigation links
+        navLinks[index].classList.remove('active');
+      }
+    });
+  });
+}
+
+// Call the function to start tracking scroll positions and updating the active navigation
+changeActiveNav();
