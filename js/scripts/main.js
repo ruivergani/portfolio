@@ -1,6 +1,25 @@
 // Script Data AOS Animation
 AOS.init();
 
+// Preloader Function
+const overlay = document.querySelector('.overlay-preloader');
+const loader = document.querySelector('.overlay-loader');
+const overlayTL = new TimelineMax();
+const loaderTL = new TimelineMax();
+var animateOut = function() {
+  overlayTL.to( overlay, .6, { bottom: '100%', ease: Power4.easeInOut, delay: .30 } );
+  loaderTL.to( loader, .5, { y: '-40', opacity: 0 });
+};
+var animateOut_2 = function() {
+  overlayTL.to( overlay, .7, { top: '100%', ease: Power4.easeInOut, delay: .30 } );
+  loaderTL.to( loader, .6, { y: '40', opacity: 0 });
+}
+var animateIn = function() {
+  overlayTL.fromTo( overlay, .7, { top: '100%', bottom: 0 }, { top: 0, ease: Power4.easeInOut } );
+  loaderTL.fromTo( loader, .6, { y: '40', opacity: 0, delay: .30 }, { y: 0, opacity: 1, delay: .7, ease: Power2.easeOut } );
+};
+animateOut_2();
+  
 // Script for Mobile Navigation
 const slide_mobile_case = new Swiper(".slide-cases-mobile", {
   slidesPerView: 1,

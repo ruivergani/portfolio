@@ -1,0 +1,21 @@
+.overlay-preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-preloader {
+    z-index: 100000;
+    background: linear-gradient(115.6deg, #000811 -7.5%, #000E17 105.49%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.overlay-loader {
+    margin-top: -200px;
+    width: 300px;
+    min-width: 100px;
+    height: 200px;
+    background: url('../assets/logos/logo-ruineto-white.svg') center center no-repeat;
+}
