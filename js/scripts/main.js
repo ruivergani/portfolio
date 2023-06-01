@@ -1,5 +1,5 @@
 // Script Data AOS Animation
-AOS.init();
+AOS.init({disable: 'mobile'});
 
 // Preloader Function
 const overlay = document.querySelector('.overlay-preloader');
