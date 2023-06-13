@@ -95,19 +95,19 @@
                     z-index: 2000;
                     width: 9rem;
                     height: 9rem;
+                    border-radius: 50%;
                     .rotate{
                         position: absolute;
                         top: 0;
                         left: 0;
-                        margin: auto;
+                        margin: 0 auto;
+                        border-radius: 50%;
                         transition: all 0.1s linear;
-                        width: fit-content;
-                        height: fit-content;
                     }
                     .arrow{
                         z-index: 1999;
                         position: absolute;
-                        top: 27px;
+                        top: 28px;
                         right: 0;
                         left: 28px;
                         bottom: 0;
