@@ -29,14 +29,15 @@ ___
 
 The following technologies were employed in the creation of this project:
 
-- [GULP](https://gulpjs.com/)
-- [Swipper JS](https://swiperjs.com/)
-- [WordPress](https://wordpress.org/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [PHP](https://www.php.net/)
-- [SASS](https://sass-lang.com/)
-- HTML and CSS
-- Responsive to all sizes of screens
+- [GULP](https://gulpjs.com/);
+- [Swipper JS](https://swiperjs.com/);
+- [WordPress](https://wordpress.org/);
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript);
+- [PHP](https://www.php.net/);
+- [SASS](https://sass-lang.com/);
+- HTML and CSS;
+- Responsive to all sizes of screens;
+- Multi-language website.
 
 ___
 
