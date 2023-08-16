@@ -63,7 +63,6 @@ $ sudo yarn
 $ gulp
 
 # The terminal will display the local address where the application is running:
-
   http://localhost:3000/
 
 ```
