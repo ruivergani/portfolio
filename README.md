@@ -20,7 +20,6 @@ ___
 ## 🎨 Layout
 The page in desktop format is seen in the image below:
 \
-\
 
 ![linkedin_post](https://user-images.githubusercontent.com/70537459/222933593-cbb7377e-6d0b-4f52-8d12-a19ae6452fff.png)
 
