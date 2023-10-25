@@ -796,12 +796,12 @@
             }
         }
         .about-me-text{
-            padding-top: 25px;
+            padding-top: 45px;
             flex: 1;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
-            gap: 64px;
+            gap: 60px;
             .about-me-text-content{
                 span, h2, .subtitle-about-me-text, .description-about-me-text, .link-instagram{
                     font-family: 'Inter', sans-serif;
@@ -836,7 +836,7 @@
                 }
                 .description-about-me-text{
                     width: 100%;
-                    max-width: 527px;
+                    max-width: 670px;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 150%;
