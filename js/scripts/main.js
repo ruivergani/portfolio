@@ -124,10 +124,9 @@ const swiper = new Swiper(".slide-principal", {
 });
 // Script for Slide Image Cases
 const slide_image_cases = new Swiper(".slide-image-cases",{
-  slidesPerView: 'auto',
-  spaceBetween: 32,
+  slidesPerView: 2.3,
+  spaceBetween: 20,
   loop: !0,
-  speed: 800,
   centeredSlides: !0,
   watchSlidesVisibility: !0,
   watchSlidesProgress: !0,
@@ -143,7 +142,7 @@ const slide_image_cases = new Swiper(".slide-image-cases",{
 const slide_about_case = new Swiper(".slide-about-case",{
   spaceBetween: 40,
   direction: "vertical",
-  speed: 800,
+  loop: false,
   pagination: {
     el: ".s-cases .ctrl-slide .page-fraction",
     type: "fraction",
